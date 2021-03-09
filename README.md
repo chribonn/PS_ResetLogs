@@ -81,12 +81,13 @@ Action: *Start a program*
 
 Program/script <span style="color:yellow">(Location where PowerScript 7 is installed)</span>: *"C:\Program Files\PowerShell\7\pwsh.exe"*
 
-Add arguments (optional) *<span style="color:yellow">(modify parameters as required)</span>: -ExecutionPolicy Bypass Reset-Logs.ps1 -Logfile <span style="color:white;bold">"c:\UPSMonitor\Watch-Win32_UPS.log"</span> <span style="color:pink">-BackupLogFile "c:\archive\Watch-Win32_UPS.log"</span> <span style="color:green">-EmailTo "alert email" -EmailFromUn "sender email" -EmailFromPw "email password" -EmailSMTP "smtp server" -EmailSMTPPort smtpport -EmailSMTPUseSSL</span>
+Add arguments (optional) *<span style="color:yellow">(modify parameters as required)</span>: -ExecutionPolicy Bypass Reset-Logs.ps1 -Logfile <span style="color:white;bold">"c:\UPSMonitor\Watch-Win32_UPS.log"</span> <span style="color:pink">-BackupLogFile "c:\archive\Watch-Win32_UPS.log"</span> <span style="color:green">-EmailTo "alert email" -EmailFromUn "sender email" -EmailFromPw "email password" -EmailSMTP "smtp server" -EmailSMTPPort "smtp port" -EmailSMTPUseSSL <span style="color:blue">-HeaderRow "DateTime\tEventLog\tEventID\tEventMsg\tBattSystemName\tBattName\r\n"</span>
 
 <span style="color:yellow">Optional parameters: </span>
 
 * <span style="color:green">Email parameters</span>
 * <span style="color:pink">Should the current log file be backed up (and what should the backup file be called)</span>
+* <span style="color:blue">A Header line what will be written to the new log file</span>
 
 Start in (optional) <span style="color:yellow">(Location where Reset-Logs is installed)</span>: *"C:\Powershell\PS_ResetLogs"* 
 
