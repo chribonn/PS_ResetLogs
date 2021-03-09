@@ -21,7 +21,7 @@ Reset-Logs was tested on PowerShell 7. This version of PowerShell does not come 
 Information on how to install this version is available on the  Microsoft page [Installing PowerShell on Windows](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7.1)
 
 
-## Configure Powershell execution policy if you get a PSSecurityException error
+## Configure PowerShell execution policy if you get a PSSecurityException error
 
 If you get an error when you execute the script similar to the one hereunder you need to change the execution policy.
 
@@ -33,14 +33,14 @@ If you get an error when you execute the script similar to the one hereunder you
         + CategoryInfo          : SecurityError: (:) [], PSSecurityException
         + FullyQualifiedErrorId : UnauthorizedAccess
 	
-Open Powershell as administrator and execute the following
+Open PowerShell as administrator and execute the following
 
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 
 ## How to setup Reset-Logs to run based on a schedule
 
-Task Scheduler will be used to program a task that will run periodically. The task will run Reset-Logs PowerShell script.  The frequency can be adjusted to to met your requirements.
+Task Scheduler will be used to program a task that will run periodically. The task will run Reset-Logs PowerShell script.  The frequency can be adjusted to meet your requirements.
 
 ![Create a Task in Task Scheduler](images/TaskScheduler01.png)
 
