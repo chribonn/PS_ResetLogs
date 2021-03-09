@@ -42,14 +42,14 @@ Open Powershell as administrator and execute the following
 
 Task Scheduler will be used to program a task that will run periodically. The task will run Reset-Logs PowerShell script.  The frequency can be adjusted to to met your requirements.
 
-![Create a Task in Task Scheduler](images/TaskScheduler001.png)
+![Create a Task in Task Scheduler](images/TaskScheduler01.png)
 
 Right click on the **Task Scheduler Library** and select the **Create Task...** option.
 
 
 ### Task Scheduler -> General
 
-![Task Scheduler General Tab Settings](images/TaskScheduler002.png)
+![Task Scheduler General Tab Settings](images/TaskScheduler02.png)
 
 Task Name <span style="color:yellow">(you can define your own; replace XXX with a description of  logs being managed)</span>: *Reset-Logs_XXX*  
 
@@ -62,7 +62,7 @@ Run with the highest privileges: *Checked*
 
 ### Task Scheduler -> Triggers
 
-![Task Scheduler Triggers Settings](images/TaskScheduler003.png)
+![Task Scheduler Triggers Settings](images/TaskScheduler03.png)
 
 Begin the task: *On a schedule*
 
@@ -75,7 +75,7 @@ Enabled: *Checked*
 
 ### Task Scheduler -> Actions
 
-![Task Scheduler Actions Settings](images/TaskScheduler004.png)
+![Task Scheduler Actions Settings](images/TaskScheduler04.png)
 
 Action: *Start a program*
 
@@ -94,7 +94,7 @@ Start in (optional) <span style="color:yellow">(Location where Reset-Logs is ins
 
 ### Task Scheduler -> Conditions
 
-![Task Scheduler Condition Settings](images/TaskScheduler005.png)
+![Task Scheduler Condition Settings](images/TaskScheduler05.png)
 
 Start the task only if the computer is idle for <span style="color:yellow">(optional)</span>: *Checked*
   > 5 minutes is used in this example
@@ -108,7 +108,7 @@ Start only if the following network connection is available: *Unchecked*
 
 ### Task Scheduler -> Settings
 
-![Task Scheduler Settings Settings](images/TaskScheduler006.png)
+![Task Scheduler Settings Settings](images/TaskScheduler06.png)
 
 Allow task to be run on demand: <span style="color:yellow">(Useful if you need to debug)<span> *Checked* 
 
@@ -125,7 +125,7 @@ If the running task does not end when requested, force it to stop: *Checked*
 
 ### Task Scheduler -> Specify Credentials
 
-![Task Scheduler Settings Settings](images/TaskScheduler007.png)
+![Task Scheduler Settings Settings](images/TaskScheduler07.png)
 
 After clicking **OK** Task Scheduler will prompt for a password under which this task will execute.
 
