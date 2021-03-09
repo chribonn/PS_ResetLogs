@@ -12,7 +12,7 @@ Reset-Logs is a small utility that takes a log file (that must not be locked) an
 
 Initially Reset-Logs was part of the UPS Monitoring utility (https://github.com/chribonn/UPSMonitor) but has now been extracted into its own repository because it can be used standalone in other solutions that would benefit from log file recycling.
 
-The most up-to-date version of this utility can be downloaded from https://github.com/chribonn/UPSMonitor
+The most up-to-date version of this utility can be downloaded from https://github.com/chribonn/PS_ResetLogs.
 
 ## PowerShell 7
 
@@ -53,7 +53,7 @@ Right click on the **Task Scheduler Library** and select the **Create Task...** 
 
 Task Name <span style="color:yellow">(you can define your own; replace XXX with a description of  logs being managed)</span>: *Reset-Logs_XXX*  
 
-Description <span style="color:yellow">(use your own / optional)</span>: *This task runs <specify frequency>. It emails the log named <specify path of log> to <email> and thereafter backs it up to <specify path of backup log>.* 
+Description <span style="color:yellow">(use your own / optional)</span>: *This task runs every < specify frequency >. It emails the log named < specify path of log > to < email > and thereafter backs it up to < specify path of backup log >.* 
 
 Run whether user is logged on or not: *Checked* 
 
