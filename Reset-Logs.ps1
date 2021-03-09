@@ -187,7 +187,7 @@ function BackupCurrFile {
 
 
 # ************************** Debug
-$DebugPreference = "Continue"
+# $DebugPreference = "Continue"
 
 <#
     ********************** Main 
